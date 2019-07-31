@@ -1,0 +1,20 @@
+<mat-sidenav-container>
+    <mat-sidenav class="padding-10" #sidenav>
+        <mat-nav-list>
+            <mat-list-item routerLink="/attendance" (click)="sidenav.toggle()">
+                <a matLine>Attendance</a>
+            </mat-list-item>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div class="flex-column full-height">
+            <mat-toolbar color="primary" *ngIf="navVisibility">
+                <mat-icon class="padding-right-10" (click)="sidenav.toggle()">menu</mat-icon>
+                <span>Atmiya Vidya Dham</span>
+            </mat-toolbar>
+            <div class="flex-1 overflow-auto">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>

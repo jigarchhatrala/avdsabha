@@ -1,0 +1,23 @@
+mat-card {
+  margin: 10px;
+  padding: 10px;
+  width: 300px;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+@media only screen and (min-width: 400px) {
+  mat-card{
+    width: 340px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  mat-card{
+    width: 540px;
+  }
+}
+
+
+

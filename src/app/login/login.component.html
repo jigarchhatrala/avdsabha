@@ -1,0 +1,16 @@
+<div class="flex-column full-height flex-center">
+    <mat-card class="mat-elevation-z10">
+        <h1 class="text-align-center">Login</h1>
+        <div class="flex-column flex-center">
+            <mat-form-field>
+                <input matInput placeholder="Username" #username>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput type="password" placeholder="Password" #password>
+            </mat-form-field>
+            <button mat-raised-button color="primary" class="mat-elevation-z5"
+                    (click)="login(username.value,password.value)">Login
+            </button>
+        </div>
+    </mat-card>
+</div>
